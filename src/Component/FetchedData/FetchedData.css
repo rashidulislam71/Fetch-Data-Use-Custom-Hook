@@ -1,0 +1,68 @@
+
+
+.usetTitle,
+.todoTitle
+{
+    text-align:center;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    
+}
+.users,
+.todo
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.singleUser,
+.singleToto
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0px 0px 0px 40px;
+    background: #e6ffee;
+    border-radius: 5px;
+    width: 240px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.singleUser:hover,
+.singleToto:hover
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.singleUser p span,
+.singleToto p span
+{
+    color: 	 #0099cc;
+}
+
+.singleUser p,
+.singleToto p
+{
+    color: rgb(24, 11, 11);
+}
+
+
+@media screen and (max-width: 360px) {
+
+    .users,
+    .todo
+    {
+        grid-template-columns: repeat(1, 1fr);
+        /* padding-inline: 5px; */
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 992px) {
+  
+    .users,
+    .todo
+    {
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 10px;
+    }
+}
+
